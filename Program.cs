@@ -46,8 +46,8 @@ internal static class Program
 
             // Display coords and angles
             var (sin, cos) = MathF.SinCos(angle);
-            DrawText($"({cos:F2}, {sin:F2})\n(Cos, Sin)", (int)hyp.X, (int)hyp.Y, 16, Color.White);
-            DrawText($"Rad: {angle:F2}\nDeg: {angle * ToDeg:F2}°", (int)centre.X, (int)centre.Y - 16, 16, Color.White);
+            DrawText($"({cos:F4}, {sin:F4})\n(Cos, Sin)", (int)hyp.X-48, (int)hyp.Y, 16, Color.White);
+            DrawText($"Rad: {angle:F4}\nDeg: {angle * ToDeg:F2}°", (int)centre.X, (int)centre.Y - 16, 16, Color.White);
 
             EndDrawing();
         }
